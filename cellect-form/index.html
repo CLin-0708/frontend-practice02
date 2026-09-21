@@ -23,57 +23,63 @@
     <section id="form">
       <h2>借阅登记表</h2>
       <form action="#" method="get">
-        <p>
-          <label for="name">姓名 *</label>
-          <input type="text" id="name" name="name" placeholder="请输入姓名" required>
-        </p>
-        <p>
-          <label for="sid">学号 *</label>
-          <input type="text" id="sid" name="sid" placeholder="请输入学号" pattern="[0-9]{10}" required>
-        </p>
-        <p>性别 *</p>
-        <p>
-          <label><input type="radio" name="gender" value="male" required> 男</label>
-          <label><input type="radio" name="gender" value="female"> 女</label>
-        </p>
-        <p>
-          <label for="dept">所在院系 *</label>
-          <input type="text" id="dept" name="dept" placeholder="请输入所在院系" required>
-        </p>
-        <p>
-          <label for="phone">常用电话 *</label>
-          <input type="tel" id="phone" name="phone" placeholder="请输入11位手机号" pattern="[0-9]{11}" required>
-        </p>
-        <p>
-          <label for="mail">邮箱</label>
-          <input type="email" id="mail" name="mail" placeholder="选填，用于接收通知">
-        </p>
-        <p>
-          <label for="book">图书名称 *</label>
-          <input type="text" id="book" name="book" placeholder="请输入书名" required>
-        </p>
-        <p>
-          <label for="count">借阅数量 *</label>
-          <input type="number" id="count" name="count" min="1" max="5" value="1" required>
-        </p>
-        <p>
-          <label for="date">借用时间 *</label>
-          <input type="date" id="date" name="date" required>
-        </p>
-        <p>借阅类型</p>
-        <p>
-          <label><input type="radio" name="type" value="personal"> 个人借阅</label>
-          <label><input type="radio" name="type" value="group"> 小组借阅</label>
-        </p>
-        <p>归还方式（可多选）</p>
-        <p>
-          <label><input type="checkbox" name="return" value="self"> 自助归还</label>
-          <label><input type="checkbox" name="return" value="front"> 前台归还</label>
-        </p>
-        <p>
-          <label for="remark">备注</label><br>
-          <textarea id="remark" name="remark" rows="4" maxlength="200" placeholder="其他需要说明的事项"></textarea>
-        </p>
+        <fieldset>
+          <legend>基本信息</legend>
+          <p>
+            <label for="name">姓名 *</label>
+            <input type="text" id="name" name="name" placeholder="请输入姓名" required>
+          </p>
+          <p>
+            <label for="sid">学号 *</label>
+            <input type="text" id="sid" name="sid" placeholder="请输入学号" pattern="[0-9]{10}" required>
+          </p>
+          <p>性别 *</p>
+          <p>
+            <label><input type="radio" name="gender" value="male" required> 男</label>
+            <label><input type="radio" name="gender" value="female"> 女</label>
+          </p>
+          <p>
+            <label for="dept">所在院系 *</label>
+            <input type="text" id="dept" name="dept" placeholder="请输入所在院系" required>
+          </p>
+          <p>
+            <label for="phone">常用电话 *</label>
+            <input type="tel" id="phone" name="phone" placeholder="请输入11位手机号" pattern="[0-9]{11}" required>
+          </p>
+          <p>
+            <label for="mail">邮箱</label>
+            <input type="email" id="mail" name="mail" placeholder="选填，用于接收通知">
+          </p>
+        </fieldset>
+        <fieldset>
+          <legend>借阅信息</legend>
+          <p>
+            <label for="book">图书名称 *</label>
+            <input type="text" id="book" name="book" placeholder="请输入书名" required>
+          </p>
+          <p>
+            <label for="count">借阅数量 *</label>
+            <input type="number" id="count" name="count" min="1" max="5" value="1" required>
+          </p>
+          <p>
+            <label for="date">借用时间 *</label>
+            <input type="date" id="date" name="date" required>
+          </p>
+          <p>借阅类型</p>
+          <p>
+            <label><input type="radio" name="type" value="personal"> 个人借阅</label>
+            <label><input type="radio" name="type" value="group"> 小组借阅</label>
+          </p>
+          <p>归还方式（可多选）</p>
+          <p>
+            <label><input type="checkbox" name="return" value="self"> 自助归还</label>
+            <label><input type="checkbox" name="return" value="front"> 前台归还</label>
+          </p>
+          <p>
+            <label for="remark">备注</label><br>
+            <textarea id="remark" name="remark" rows="4" maxlength="200" placeholder="其他需要说明的事项"></textarea>
+          </p>
+        </fieldset>
         <p>
           <button type="submit">提交登记</button>
           <button type="reset">重置</button>
