@@ -59,3 +59,19 @@ footer {
   color: #888;
   font-size: 14px;
 }
+/* 研究任务一：纯CSS表单状态 */
+input:focus {
+  outline: none;
+  border-color: #0d6efd;
+  box-shadow: 0 0 0 2px rgba(13, 110, 253, 0.25);
+}
+
+input:focus:invalid {
+  border-color: #dc3545;
+  box-shadow: 0 0 0 2px rgba(220, 53, 69, 0.25);
+}
+
+input:focus:valid {
+  border-color: #198754;
+  box-shadow: 0 0 0 2px rgba(25, 135, 84, 0.25);
+}
